@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* per il div che comprende la casella dell'input e il bottone */
+.input_and_button{
+  width:100%;
+  margin: 10px 0;
+  text-align: center;
+}
+/* per l'input */
+input{
+  width: 250px;
+  height: 30px;
+  margin-left: 20px;
+}
+/* per il bottone */
+button{
+  text-align: center;
+  background-color: #4e45c7;
+	border-radius: 28px;
+	border:1px solid #194aab;
+	cursor: pointer;
+  height:30px;
+	color: #ffffff;
+	padding:7px 20px;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button:hover {
+	background-color: #2a4ebd;
+}
+/* per il container delle card */
+.container{
+  min-height: 140px;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* per le varie card */
+.card{
+  background-color: #e6e8ed;
+  width: 250px;
+  text-align: center;
+  margin:10px 0;
+  margin-left: 15px;
+  height:120px;
+  border: 1px solid black;
+}
+.card span{
+  color: #2d36d8;
+}

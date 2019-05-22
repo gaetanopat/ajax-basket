@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <title>Ajax-basket</title>
+  </head>
+  <body>
+    <div class="input_and_button">
+      <input type="text" name="" value="" placeholder="Quante card vuoi visualizzare? (Max 20)">
+      <button type="button" name="button">Invia</button>
+    </div>
+    <div class="container">
+    </div>
+
+    <script src="main.js"></script>
+    <script id="template_player_data" type="text/x-handlebars-template">
+      <div class="card">
+        <h3>Codice giocatore: <span>{{codice}}</span></h3>
+        <h4>Punti fatti: <span>{{punti}}</span></h4>
+        <h4>Numero rimbalzi: <span>{{rimbalzi}}</span></h4>
+        <h4>Numero falli: <span>{{falli}}</span></h4>
+        <h4>% successo per tiri da 2 punti: <span>{{duepunti}}</span></h4>
+        <h4>% successo per tiri da 3 punti: <span>{{trepunti}}</span></h4>
+      </div>
+    </script>
+  </body>
+</html>
