@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // codice da clonare
   var player_data = $('#template_player_data').html();
   var template_player_data_function = Handlebars.compile(player_data);
 
@@ -18,9 +19,10 @@ $(document).ready(function(){
         },
         success: function (data, stato) {
           console.log(data.response);
+          var context;
           // per visualizzare ogni card
           for (var i = 0; i < numero_card; i++) {
-            var context = {
+            context = {
               codice: data.response[i].playerCode,
               punti: data.response[i].points,
               rimbalzi: data.response[i].rebounds,
@@ -31,7 +33,7 @@ $(document).ready(function(){
             var html = template_player_data_function(context);
             // appendo ogni card al container
             $('.container').append(html);
-          }
+          };
         },
         error: function (richiesta, stato, errori) {
           alert("E' avvenuto un errore. " + errore);
@@ -40,7 +42,7 @@ $(document).ready(function(){
     } else {
       // se il numero è > 20
       alert('Hai inserito un numero sbagliato');
-    }
+    };
     // svuoto la casella di input
     $('input').val('');
   });

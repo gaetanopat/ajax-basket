@@ -3,10 +3,15 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-image: url('https://t1.pixers.pics/img-c676e9e9/poster-campo-da-basket.jpg?H4sIAAAAAAAAA42PS26FMAxFtwNSwA4mPxbwpm8JCJLwSstPSdqirr6hrTqrVHlg-8o-VxdetzhMHqzfkg-wzs4tHqZ5yVvsgo_zhy-QkWrKLqtLgYhlt7_5YMN-FJVAVvGWmOTIBFdl9z7kz3UIL8VTSkfsACLVx3xmXG42gl0jNMgVoAZhtNGcJjSSxv5YqpiGzQ3BVa04CetjezC86v9cDRxBjI6PctQO21H3TYOnwOqX8IUlbVgr5YX-SakQmbrSpTCvRY675-tUPB-PEv7w_J4hf8HtDoSgBCgCai6pv90JlVBETS_tZEgrIf1k0U_KG-NbbC0K7Uanhjq7fAIqBYKjiwEAAA==');
+  background-size: cover;
+}
 /* per il div che comprende la casella dell'input e il bottone */
 .input_and_button{
   width:100%;
-  margin: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
   text-align: center;
 }
 /* per l'input */
@@ -32,12 +37,13 @@ button:hover {
 }
 /* per il container delle card */
 .container{
-  min-height: 140px;
+  min-height: calc(100vh - 50.5px);
   width: 100%;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 /* per le varie card */
 .card{
